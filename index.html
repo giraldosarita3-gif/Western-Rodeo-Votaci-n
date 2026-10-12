@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#201713">
+<title>Best Dressed · Western Rodeo</title>
+<style>
+:root{--ink:#241914;--ink2:#38261e;--cream:#f5ead8;--paper:#fff9ef;--wine:#742d35;--wine2:#572129;--gold:#c7a46b;--muted:#85766a;--line:#e3d3bd;--green:#405c43;--shadow:0 18px 46px rgba(18,10,7,.25)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 15% 0%,rgba(140,83,49,.27),transparent 32rem),radial-gradient(ellipse at 95% 20%,rgba(116,45,53,.28),transparent 29rem),#211713;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.11;background-image:repeating-linear-gradient(93deg,transparent 0,transparent 40px,rgba(255,255,255,.07) 41px,transparent 43px),repeating-linear-gradient(0deg,transparent 0,transparent 90px,rgba(0,0,0,.18) 92px,transparent 96px);mix-blend-mode:screen}
+.wrap{width:min(1080px,100% - 34px);margin:0 auto;position:relative}.topbar{display:flex;justify-content:space-between;align-items:center;padding:21px 0 16px;color:#e9d9c2;font-size:10px;letter-spacing:.19em;text-transform:uppercase;gap:12px}.brand{display:flex;align-items:center;gap:10px}.brand-mark{height:29px;width:29px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:Georgia,serif;font-size:17px}.edition{color:#c6b5a2;text-align:right}.hero{text-align:center;color:var(--cream);padding:38px 16px 32px}.eyebrow{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.26em;text-transform:uppercase}.hero h1{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.055em;font-weight:500;font-size:clamp(48px,9vw,92px);line-height:.97;margin:15px 0 12px}.hero h1 span{color:var(--gold);font-style:italic}.hero p{max-width:490px;margin:0 auto;color:#d7c8b7;font-size:14px;line-height:1.75}.hero-ornament{display:flex;justify-content:center;align-items:center;gap:12px;margin-bottom:15px;color:var(--gold)}.hero-ornament:before,.hero-ornament:after{content:"";height:1px;width:47px;background:linear-gradient(90deg,transparent,var(--gold))}.hero-ornament:after{transform:scaleX(-1)}.security-note{display:inline-flex;align-items:center;gap:8px;padding:9px 13px;border:1px solid rgba(199,164,107,.34);border-radius:100px;color:#dcc9ad;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-top:22px}.security-note svg{flex-shrink:0}
+.paper{background:var(--paper);border-radius:15px 15px 6px 6px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:30px}.introline{padding:22px 28px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px;background:#f8efdf}.introline h2{margin:0;font-family:Georgia,serif;font-size:21px;font-weight:500}.introline p{margin:5px 0 0;color:var(--muted);font-size:12px}.step-tag{flex-shrink:0;color:var(--wine);font-size:10px;font-weight:800;letter-spacing:.15em;border:1px solid #d8b9ab;padding:8px 10px;border-radius:4px}.voting-body{padding:24px 28px 30px}.category{margin:0 0 31px}.category:last-child{margin-bottom:0}.category-head{display:flex;align-items:center;gap:13px;margin-bottom:16px}.category-number{font-family:Georgia,serif;color:var(--gold);font-size:28px}.category-title{margin:0;color:var(--wine2);font-size:13px;letter-spacing:.13em;text-transform:uppercase;font-weight:850}.category-sub{margin:4px 0 0;color:var(--muted);font-size:12px}.candidate-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.person-card{display:block;min-width:0;padding:0;text-align:left;border:1px solid #e5d7c5;border-radius:8px;background:#fffdf9;overflow:hidden;cursor:pointer;transition:border-color .15s,transform .15s,box-shadow .15s;position:relative;color:var(--ink);font:inherit}.person-card:hover{transform:translateY(-2px);border-color:#c4a36d;box-shadow:0 8px 16px rgba(69,43,29,.08)}.person-card.selected{border:2px solid var(--wine);box-shadow:0 0 0 3px rgba(116,45,53,.11)}.photo-frame{aspect-ratio:4/4.3;background:linear-gradient(145deg,#e8d8c1,#d4bea0);display:grid;place-items:center;overflow:hidden;position:relative}.photo-frame img{width:100%;height:100%;object-fit:cover;display:block}.photo-placeholder{color:#9a7750;text-align:center;display:grid;place-items:center;gap:7px;width:100%;height:100%;font-family:Georgia,serif}.photo-placeholder strong{font-size:36px;font-weight:400;border:1px solid rgba(154,119,80,.55);border-radius:50%;width:68px;height:68px;display:grid;place-items:center}.photo-placeholder small{font-family:ui-sans-serif,sans-serif;font-size:9px;text-transform:uppercase;letter-spacing:.13em}.tick{position:absolute;right:9px;top:9px;width:23px;height:23px;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(255,255,255,.8);background:rgba(255,249,239,.92);color:var(--wine);font-weight:900;font-size:12px;box-shadow:0 2px 8px #0002}.selected .tick{background:var(--wine);color:white;border-color:var(--wine)}.person-name{display:block;padding:12px 11px 13px;font-size:12px;font-weight:750;line-height:1.3;overflow-wrap:anywhere}.card-hint{display:block;padding:0 11px 12px;margin-top:-5px;color:#998779;font-size:10px}.person-card.no-photo .photo-frame{background:linear-gradient(135deg,#f0e5d4,#d8c2a4)}.empty-category{border:1px dashed #d9c5ae;border-radius:8px;text-align:center;padding:24px;color:#8b7a6c;font-size:13px}.error-box{display:none;padding:13px 15px;background:#f9e4df;border-left:3px solid #a54040;color:#7d292d;font-size:13px;margin:0 0 18px;border-radius:3px}.error-box.show{display:block}.voting-footer{padding:22px 28px 27px;background:#f4e8d6;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}.privacy-copy{display:flex;gap:10px;color:#76665a;font-size:11px;line-height:1.5;max-width:415px}.privacy-copy svg{flex-shrink:0;color:var(--green);margin-top:2px}.primary-btn{border:0;border-radius:4px;background:var(--wine);color:white;font:inherit;font-size:11px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;padding:16px 22px;min-height:49px;cursor:pointer;transition:background .15s,transform .15s;white-space:nowrap}.primary-btn:hover{background:var(--wine2);transform:translateY(-1px)}.primary-btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.footer{color:#ad9d8b;text-align:center;font-size:10px;letter-spacing:.11em;padding:0 10px 25px}.footer b{color:var(--gold);font-weight:700}.state-screen{padding:54px 24px 60px;text-align:center}.state-icon{width:64px;height:64px;margin:0 auto 17px;border-radius:50%;border:1px solid #c7a46b;color:var(--wine);display:grid;place-items:center;font-size:30px}.state-screen h2{font-family:Georgia,serif;font-size:30px;font-weight:500;color:var(--wine2);margin:0 0 10px}.state-screen p{max-width:420px;margin:0 auto;color:var(--muted);font-size:13px;line-height:1.7}.tiny-note{font-size:10px!important;margin-top:20px!important}.modal-backdrop{position:fixed;inset:0;z-index:20;background:rgba(17,10,8,.77);display:none;align-items:center;justify-content:center;padding:18px;backdrop-filter:blur(4px)}.modal-backdrop.open{display:flex}.modal{max-width:440px;width:100%;background:var(--paper);border-radius:9px;padding:28px;box-shadow:0 20px 80px #0005}.modal-kicker{font-size:10px;color:var(--wine);font-weight:850;letter-spacing:.16em;text-transform:uppercase}.modal h3{margin:10px 0 6px;font:500 28px Georgia,serif;color:var(--ink)}.modal p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}.review-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.review-row:last-of-type{border-bottom:0}.review-photo{height:55px;width:50px;flex-shrink:0;object-fit:cover;border-radius:4px;background:#e4d5c1}.review-label{font-size:9px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}.review-name{font-size:13px;font-weight:800;margin-top:4px}.modal-actions{display:flex;gap:10px;margin-top:22px}.secondary-btn{background:transparent;border:1px solid #cdbca6;border-radius:4px;padding:13px 16px;color:var(--ink);font:inherit;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.modal-actions .primary-btn{flex:1}.loading{padding:45px 20px;text-align:center;color:#e5d7c3;font-size:13px;letter-spacing:.05em}.spin{display:inline-block;width:20px;height:20px;border:2px solid #8d7561;border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite;vertical-align:middle;margin-right:9px}@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:760px){.candidate-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.voting-body{padding:20px 17px 24px}.introline{padding:18px 17px}.voting-footer{padding:19px 17px 22px}.person-name{padding:10px 9px 12px;font-size:11px}.hero{padding:32px 10px 27px}.hero p{font-size:13px}.topbar{font-size:9px}.edition{max-width:120px;line-height:1.5}.step-tag{display:none}}
+@media(max-width:440px){.wrap{width:calc(100% - 20px)}.candidate-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.photo-frame{aspect-ratio:1/1.03}.hero h1{font-size:53px}.hero{padding-top:29px}.voting-footer{display:flex;flex-direction:column;align-items:stretch}.primary-btn{width:100%}.privacy-copy{max-width:none}.introline h2{font-size:19px}.category-head{gap:9px}.category-number{font-size:25px}.category-title{font-size:11px}.topbar{padding-top:15px}.brand{letter-spacing:.1em}.brand-mark{height:26px;width:26px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">S</span><span>Sarita's Rodeo</span></div>
+    <div class="edition">23 OCT · WESTERN NIGHT</div>
+  </header>
+  <section class="hero">
+    <div class="hero-ornament" aria-hidden="true">✦</div>
+    <div class="eyebrow">El veredicto del rodeo</div>
+    <h1>BEST <span>DRESSED</span></h1>
+    <p>Todos tienen su favorito. Llegó la hora de elegir los looks que se robaron la noche.</p>
+    <div class="security-note"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Voto anónimo · Una votación por dispositivo</div>
+  </section>
+  <main class="paper" id="main-card">
+    <div id="loading" class="loading"><span class="spin"></span>Preparando la votación…</div>
+    <div id="vote-view" hidden>
+      <div class="introline"><div><h2>Elige tus favoritos</h2><p>Selecciona una persona en cada categoría.</p></div><div class="step-tag">2 CATEGORÍAS</div></div>
+      <div class="voting-body">
+        <div id="error" class="error-box" role="alert"></div>
+        <section class="category" aria-labelledby="male-heading">
+          <div class="category-head"><div class="category-number">01</div><div><h2 class="category-title" id="male-heading">Mejor vestido masculino</h2><p class="category-sub">Tu vaquero favorito de la noche.</p></div></div>
+          <div class="candidate-grid" id="male-grid"></div>
+        </section>
+        <section class="category" aria-labelledby="female-heading">
+          <div class="category-head"><div class="category-number">02</div><div><h2 class="category-title" id="female-heading">Mejor vestida femenina</h2><p class="category-sub">El look que merece llevarse la corona.</p></div></div>
+          <div class="candidate-grid" id="female-grid"></div>
+        </section>
+      </div>
+      <div class="voting-footer">
+        <div class="privacy-copy"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3 4 6v5c0 5 3.4 8.2 8 10 4.6-1.8 8-5 8-10V6l-8-3Z"/><path d="m8.5 12 2.3 2.3 4.8-5"/></svg><span>Tu elección es secreta. No se publicarán los resultados hasta que cierre la votación.</span></div>
+        <button id="review-btn" class="primary-btn" disabled>Revisar mi voto&nbsp; ↗</button>
+      </div>
+    </div>
+    <div id="state-view" class="state-screen" hidden>
+      <div class="state-icon" id="state-icon">✦</div><h2 id="state-title">¡Gracias por votar!</h2><p id="state-copy">Tu voto quedó registrado.</p><p class="tiny-note" id="state-note"></p>
+    </div>
+  </main>
+  <footer class="footer">BUEN OJO, BUEN ESTILO. <b>QUE GANE EL MEJOR LOOK.</b></footer>
+</div>
+<div class="modal-backdrop" id="review-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <div class="modal-kicker">Última revisión</div><h3 id="modal-title">¿Estos son tus favoritos?</h3><p>Revisa tus elecciones. Una vez enviado, el voto no se puede cambiar desde este dispositivo.</p>
+    <div class="review-row"><img class="review-photo" id="review-male-photo" alt=""><div><div class="review-label">Mejor vestido masculino</div><div class="review-name" id="review-male-name"></div></div></div>
+    <div class="review-row"><img class="review-photo" id="review-female-photo" alt=""><div><div class="review-label">Mejor vestida femenina</div><div class="review-name" id="review-female-name"></div></div></div>
+    <div class="modal-actions"><button class="secondary-btn" id="edit-btn">Editar</button><button class="primary-btn" id="send-btn">Confirmar voto</button></div>
+  </div>
+</div>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  let state = null;
+  let selectedMale = '';
+  let selectedFemale = '';
+  let sending = false;
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const initials = name => String(name || '?').trim().split(/\s+/).slice(0,2).map(s=>s[0]||'').join('').toUpperCase();
+  const photoTag = (p, extra='') => p.photo ? `<img ${extra} src="${esc(p.photo)}" alt="Foto de ${esc(p.name)}" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.photo-placeholder').style.display='grid'">` : '';
+  function candidateCard(p, cat, selected) {
+    const isSelected = selected === p.id;
+    const img = photoTag(p);
+    return `<button type="button" class="person-card ${isSelected?'selected':''} ${p.photo?'':'no-photo'}" data-category="${cat}" data-id="${esc(p.id)}" aria-pressed="${isSelected}" aria-label="Votar por ${esc(p.name)}" title="Elegir a ${esc(p.name)}"><span class="photo-frame">${img}<span class="photo-placeholder" style="${p.photo?'display:none':''}"><strong>${esc(initials(p.name))}</strong><small>Rodeo nominee</small></span><span class="tick" aria-hidden="true">${isSelected?'✓':'＋'}</span></span><span class="person-name">${esc(p.name)}</span><span class="card-hint">${isSelected?'Tu elección':'Seleccionar'}</span></button>`;
+  }
+  function renderGrid(id, people, category) {
+    $(id).innerHTML = people.length ? people.map(p => candidateCard(p, category, category==='masculino'?selectedMale:selectedFemale)).join('') : '<div class="empty-category">Aún no se han publicado participantes en esta categoría.</div>';
+  }
+  function updateButton(){ $('review-btn').disabled = !(selectedMale && selectedFemale) || sending; }
+  function showError(message){ const box=$('error'); box.textContent=message; box.classList.add('show'); }
+  function hideError(){ $('error').textContent=''; $('error').classList.remove('show'); }
+  function renderVoting(){
+    $('loading').hidden=true; $('state-view').hidden=true; $('vote-view').hidden=false;
+    renderGrid('male-grid', state.male, 'masculino'); renderGrid('female-grid', state.female, 'femenino'); updateButton();
+  }
+  function showState(title, copy, note='', icon='✦'){
+    $('loading').hidden=true; $('vote-view').hidden=true; $('state-view').hidden=false;
+    $('state-title').textContent=title; $('state-copy').textContent=copy; $('state-note').textContent=note; $('state-icon').textContent=icon;
+  }
+  async function load(){
+    try{
+      const resp=await fetch('/api/state',{cache:'no-store'});
+      if(!resp.ok) throw new Error('No se pudo cargar la votación.');
+      state=await resp.json();
+      if(state.voted){showState('¡Voto registrado!','Gracias por elegir a los mejores vestidos de la noche.','Tu voto es anónimo. Este dispositivo ya registró una votación.','✓');return;}
+      if(!state.ready){showState('La votación se está preparando','Pronto podrás elegir a tus favoritos.','La lista de participantes aún no ha sido publicada por la organización.','✦');return;}
+      renderVoting();
+    }catch(e){showState('No se pudo abrir la votación','Esta página necesita conectarse al servidor de la votación.','Si eres la persona organizadora, revisa que la página esté alojada correctamente.','!');}
+  }
+  document.addEventListener('click',e=>{
+    const card=e.target.closest('.person-card'); if(!card||!state||sending)return;
+    hideError(); const id=card.dataset.id;
+    if(card.dataset.category==='masculino')selectedMale=id;else selectedFemale=id;
+    renderVoting();
+  });
+  $('review-btn').addEventListener('click',()=>{
+    hideError();
+    const male=state.male.find(p=>p.id===selectedMale), female=state.female.find(p=>p.id===selectedFemale);
+    if(!male||!female){showError('Selecciona una persona en cada categoría antes de continuar.');return;}
+    $('review-male-name').textContent=male.name; $('review-female-name').textContent=female.name;
+    $('review-male-photo').src=male.photo||''; $('review-female-photo').src=female.photo||'';
+    $('review-male-photo').style.visibility=male.photo?'visible':'hidden'; $('review-female-photo').style.visibility=female.photo?'visible':'hidden';
+    $('review-modal').classList.add('open');
+  });
+  function closeModal(){$('review-modal').classList.remove('open');}
+  $('edit-btn').addEventListener('click',closeModal);
+  $('review-modal').addEventListener('click',e=>{if(e.target===$('review-modal'))closeModal();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+  $('send-btn').addEventListener('click',async()=>{
+    if(sending)return;
+    sending=true;$('send-btn').disabled=true;$('send-btn').textContent='Enviando…';
+    try{
+      const resp=await fetch('/api/vote',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({male_id:selectedMale,female_id:selectedFemale})});
+      const data=await resp.json();
+      if(!resp.ok){closeModal();if(resp.status===409){showState('Este dispositivo ya votó','Solo se permite una votación por dispositivo.','Gracias por participar.','✓');}else{showError(data.error||'No fue posible registrar tu voto.');}return;}
+      closeModal();showState('¡Voto registrado!','Gracias por elegir a los mejores vestidos de la noche.','Tu voto quedó guardado de forma anónima. ¡Que gane el mejor look!','✓');
+    }catch(e){closeModal();showError('No fue posible conectar con el servidor. Comprueba tu conexión e inténtalo de nuevo.');}
+    finally{sending=false;$('send-btn').disabled=false;$('send-btn').textContent='Confirmar voto';updateButton();}
+  });
+  load();
+})();
+</script>
+</body>
+</html>
